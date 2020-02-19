@@ -15,7 +15,8 @@
 - No more classes
   - You wont have to use Javascript's this which can be confusing.
   - No more remebering to bind functions.
-  - Classes don't work well with tooling, they don't minify well and have problems with hot reloading.
+  - Classes don't work well with tooling, they don't minify well and have
+    problems with hot reloading.
 
 [Reference](https://reactjs.org/docs/hooks-intro.html)
 
@@ -59,3 +60,27 @@ React hooks.
 - It's pretty simple, it goes through all the dependencies and sees if any of
   them have updated. It compares the dependencies to ones that the hook has
   saved in it's closure.
+
+### Example 5
+
+- This allows to have more than one of each type of hooks by using arrays (this
+  is how react hooks handle this as well)
+- We basically keep track of each hook on render. And as long as the hooks are
+  always run in order this will work.
+
+## Rules of hooks
+
+Now that we understand hooks, we can understand the rules we have around them.
+
+1. Only use hooks on the top level
+  - Not inside loops
+  - Not inside conditionals
+  - Not inside nested functions
+2. Only call hooks from react functions
+  - Can also be called from custom hooks
+
+These might be hard to rememeber so there is an eslint plugin to help us
+rememeber.
+
+[Reference](https://reactjs.org/docs/hooks-rules.html)
+[Eslint Plugin](https://www.npmjs.com/package/eslint-plugin-react-hooks)
