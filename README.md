@@ -29,6 +29,8 @@ React hooks.
 
 ### Example 1
 
+[Code](/implementation/example1)
+
 - This is a very simple implementation of the useState hook
 - This example illustrates closures, which are just functions that can access
   outside their scope.
@@ -39,6 +41,8 @@ React hooks.
 
 ### Example 2
 
+[Code](/implementation/example2)
+
 - If we want a similar api to react hooks we can implement it like the hooks in
   example 2.
 - With this example we run into something called a Stale Closure.
@@ -48,6 +52,8 @@ React hooks.
 
 ### Example 3
 
+[Code](/implementation/example3)
+
 - Basically the idea of this example is to replicate the functionality of react
   and how it will re-render a component on state update.
 - This works because we are not getting the state (or refereshing the closure)
@@ -56,12 +62,16 @@ React hooks.
 
 ### Example 4
 
+[Code](/implementation/example4)
+
 - This adds the use effect hook in the same way, by using a closure.
 - It's pretty simple, it goes through all the dependencies and sees if any of
   them have updated. It compares the dependencies to ones that the hook has
   saved in it's closure.
 
 ### Example 5
+
+[Code](/implementation/example5)
 
 - This allows to have more than one of each type of hooks by using arrays (this
   is how react hooks handle this as well)
@@ -73,11 +83,14 @@ React hooks.
 Now that we understand hooks, we can understand the rules we have around them.
 
 1. Only use hooks on the top level
-  - Not inside loops
-  - Not inside conditionals
-  - Not inside nested functions
+
+- Not inside loops
+- Not inside conditionals
+- Not inside nested functions
+
 2. Only call hooks from react functions
-  - Can also be called from custom hooks
+
+- Can also be called from custom hooks
 
 These might be hard to rememeber so there is an eslint plugin to help us
 rememeber.
