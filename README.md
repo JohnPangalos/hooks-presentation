@@ -97,3 +97,7 @@ rememeber.
 
 [Reference](https://reactjs.org/docs/hooks-rules.html)
 [Eslint Plugin](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+
+## More on Hooks
+
+[Hooks API Reference](https://reactjs.org/docs/hooks-reference.html)
