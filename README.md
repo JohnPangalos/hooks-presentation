@@ -1,5 +1,8 @@
 # Hooks Presentation
 
+## Reasons to use hooks
+
+
 ## Example 1
 
 - This is a very simple implementation of the useState hook
@@ -21,6 +24,15 @@
 
 ## Example 3
 
-- Basically the idea of this example is to replicate the functionality of react and how it will re-render a component on state update.
-- This works because we are not getting the state (or refereshing the closure) on every render.
+- Basically the idea of this example is to replicate the functionality of react
+  and how it will re-render a component on state update.
+- This works because we are not getting the state (or refereshing the closure)
+  on every render.
 - The state (in this case singleton) is then saved in our version react.
+
+## Example 4
+
+- This adds the use effect hook in the same way, by using a closure.
+- It's pretty simple, it goes through all the dependencies and sees if any of
+  them have updated. It compares the dependencies to ones that the hook has
+  saved in it's closure.
